@@ -60,7 +60,19 @@ src/
 
 ## Deployment
 
-Mashwar can be deployed to Vercel by importing this GitHub repository. Use `npm run build` as the build command and `dist` as the output directory. For deployment steps, see [Vercel's Vite guide](https://vercel.com/docs/frameworks/frontend/vite).
+### Deploy to Vercel
+
+1. Sign in to [Vercel](https://vercel.com/) using your GitHub account.
+2. Select **Add New → Project**, then import `elhamhasan2005/mashwar`.
+3. Keep the framework preset as **Vite**. Set the build command to `npm run build` and the output directory to `dist`.
+4. Select **Deploy**. Vercel will build the project and provide a public URL.
+5. Future pushes to the `main` branch will trigger a new deployment automatically.
+
+The included `vercel.json` sends app routes to the Vite entry point so React Router pages also work when opened or refreshed directly.
+
+No environment variables are required for this demo. Account registration and progress use browser-local storage and are not shared across browsers or devices.
+
+For more information, see [Vercel's Vite guide](https://vercel.com/docs/frameworks/frontend/vite).
 
 ## Notes
 
